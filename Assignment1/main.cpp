@@ -38,7 +38,7 @@ int main()
     color_vec2 = load_color_vecs(peg_array.at(1));
     color_vec3 = load_color_vecs(peg_array.at(2));
     //Prompt the user to enter the colors of the missing pegs
-    std::cout << "Enter color of missing pegs using the picture of the peg tray starting from top row to bottom row: "<< std::endl;
+    std::cout << "Enter color of missing pegs using the picture of the peg tray starting from top row to bottom row (color_1 color_2 color_3): "<< std::endl;
     //Store user entered colors into string variables
     std::string missing_color1, missing_color2, missing_color3;
     std::cin >> missing_color1 >> missing_color2 >> missing_color3;
@@ -55,6 +55,7 @@ int main()
     //Display size of the 2D vector
     std::cout <<"Size of 2D vector is "<< color_vec_2d[0].size()*color_vec_2d.size()<< " (" << color_vec_2d[0].size() <<"x" << color_vec_2d.size() << ")" << std::endl;
     //Call function to read and display 2D vector  
+    std::cout<<"The final output is: "<<std::endl
     print_2d_vector(color_vec_2d);
     return 0;
 }
