@@ -8,3 +8,7 @@
 //{
 //}
 
+void rwa3::LandBasedWheeled::GoUp(int x, int y){
+  std::cout<<"LandBasedWheeled::GoUp is called\n";
+}
+
