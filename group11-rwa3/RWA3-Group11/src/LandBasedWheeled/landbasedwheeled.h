@@ -3,7 +3,8 @@
 
 namespace rwa3{
 
-class LandBasedWheeled{
+class LandBasedWheeled: public LandBasedRobot{
+public:
 
 //    public:
 //    LandBasedWheeled();
